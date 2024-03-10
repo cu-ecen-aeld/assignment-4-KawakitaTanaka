@@ -1,0 +1,8 @@
+base_external/
+├── Config.in
+├── external.desc
+└── external.mk
+└── package/
+    └── aesd-assignments/
+        ├── aesd-assignments.mk
+        └── Config.in
