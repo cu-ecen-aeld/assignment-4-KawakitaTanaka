@@ -1,11 +1,12 @@
-SRC := autotest-validate.c autotest-validate-main.c
-TARGET = autotest-validate
-OBJS := $(SRC:.c=.o)
+CC = gcc
+CFLAGS = -g -Wall
+TARGET = aesdsocket
 
 all: $(TARGET)
 
-$(TARGET) : $(OBJS)
-	$(CC) $(CFLAGS) $(INCLUDES) $(OBJS) -o $(TARGET) $(LDFLAGS)
+$(TARGET): $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
 
 clean:
-	-rm -f *.o $(TARGET) *.elf *.map
+	rm -f $(TARGET)
+
