@@ -1,0 +1,7 @@
+menu "AESD Assignments Options"
+config BR2_PACKAGE_AESD_ASSIGNMENTS
+    bool "AESD assignments"
+    help
+      Select this option to include the AESD assignments application.
+
+endmenu
